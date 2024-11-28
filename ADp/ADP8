@@ -1,0 +1,46 @@
+#8
+#Line Plot
+
+import matplotlib.pyplot as plt
+x=[1,2,3,4,5,6]
+y=[2,4,5,6,2,7]
+plt.plot(x,y)
+plt.show()
+
+#Bar Plot
+import numpy as np
+import matplotlib.pyplot as plt
+
+data={'c':80,'c++':50,'java':50,'python':60,'js':40}
+cources=list(data.keys())
+values=list(data.values())
+fig=plt.figure(figsize=(10,5))
+plt.bar(cources,values)
+plt.xlabel("cources offered")
+plt.ylabel("no.of students")
+plt.title("other cources")
+plt.show()
+
+
+#histogram
+
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+data=sns.load_dataset('car_crashes')
+plt.hist(data['speeding'])
+
+
+
+#DensityPlot
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+data=sns.load_dataset('car_crashes')
+print(data.head(4))
+data.speeding.plot.density(color="green")
+plt.title("Density Plot for seeding")
+plt.show()
+
+
+

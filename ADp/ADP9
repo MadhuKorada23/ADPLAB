@@ -1,0 +1,21 @@
+#9A
+
+import matplotlib.pyplot as plt
+x=[1,9,6,7,5,2,4,7,8,3]
+y=[22,12,15,13,67,23,74,86,34,23]
+plt.scatter(x,y,c="blue")
+plt.show()
+
+#9B
+
+import matplotlib.pyplot as plt
+import pandas as pd
+
+idx=['1','2','3','4']
+cols=list('ABCD')
+df=pd.DataFrame([[10,20,30,40],[34,56,12,34],[25,29,30,24],[36,17,40,50]],columns=cols,index=idx)
+plt.imshow(df,cmap="RdYlBu")
+plt.colorbar()
+plt.xticks(range(len(df)),df.coloumns)
+plt.yticks(range(len(df)),df.index)
+plt.show()

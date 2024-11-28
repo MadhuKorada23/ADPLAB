@@ -1,0 +1,19 @@
+#6A
+
+
+import numpy as np
+import pandas as pd
+a=np.array([10,20,30,40,50])
+print(a)
+b=pd.Series(a)
+print(b)
+print(type(b))
+
+#6B
+
+
+import pandas as pd
+a=pd.Series(['100','200','Python','9.65','400'])
+print(a)
+b=pd.Series(a).sort_values()
+print(b)

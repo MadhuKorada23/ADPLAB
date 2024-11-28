@@ -1,0 +1,21 @@
+#2A
+
+
+import numpy as np
+a=np.array([[1,2,3],[4,5,6]])
+print(a)
+b=np.arange(27).reshape((3,3,3))
+print(b)
+c=b.ndim
+print(c)
+shape=b.shape
+print(shape)
+
+#2B
+
+
+import numpy as np
+a=np.zeros(shape=(3,3))
+print(a)
+b=np.ones(shape=(3,3))
+print(b)

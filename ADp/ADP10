@@ -1,0 +1,46 @@
+#10 
+#BarPlot
+
+from bokeh.plotting import figure, output_file, show
+output_file("gfg.html")
+graph=figure(title="Bokeh Vertical bar")
+x=[1,2,3,4,5]
+top=[1,2,3,4,5]
+width=0.5
+graph.vbar(x,top=top,width=width)
+show(graph)
+
+#scatter Plot
+
+from bokeh.plotting import figure, output_file, show
+output_file("gfg.html")
+graph=figure(title="Scatter Graph")
+x=[1,2,3,4,5]
+y=[1,2,3,4,5]
+width=0.5
+graph.scatter(x,y)
+show(graph)
+
+
+#Patch
+from bokeh.plotting import figure, output_file, show
+output_file("gfg.html")
+graph=figure(title="Patch Graph")
+x=[0,1,2,3,4,5]
+y=[5,2,8,5,0,10]
+width=0.5
+graph.patch(x,y)
+show(graph)
+
+
+#pie
+from bokeh.plotting import figure, output_file, show
+output_file("gfg.html")
+graph=figure(title="Pie chart")
+x=y=0
+radius=1
+start_angle=[0,1.8,2.5,3.7,5.6]
+end_angle=[1.8,2.5,3.7,5.6,0]
+color=["violet","blue","green","yellow","red"]
+graph.wedge(x,y,radius,start_angle,end_angle,color=color)
+show(graph)

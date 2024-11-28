@@ -1,0 +1,12 @@
+#7A
+
+
+import pandas as pd
+a=pd.Series(data=[2,4,5,8,9,2,1,5,6])
+print(a)
+print(a.mean())
+print(a.std())
+
+
+#7B
+
