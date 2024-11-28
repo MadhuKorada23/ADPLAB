@@ -1,0 +1,22 @@
+#1A add x and sub y to an array
+
+import numpy as np
+arr=np.array([5,2,4,9,8])
+print(arr)
+x=2
+y=1
+addition=arr+x
+print(addition)
+substraction=arr-y
+print(substraction)
+
+#1B add,sub,mul of two matrices
+
+import numpy as np
+ar=np.array([[2,1,4,5,6],[4,8,9,4,2]])
+br=np.array([[9,5,6,1,2],[2,3,5,6,1]])
+ar 
+br
+print(np.add(ar,br))
+print(np.subtract(ar,br))
+print(np.multiply(ar,br))
